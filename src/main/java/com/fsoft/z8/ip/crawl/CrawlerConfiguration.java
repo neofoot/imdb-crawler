@@ -3,18 +3,18 @@ package com.fsoft.z8.ip.crawl;
 import java.util.Set;
 
 public final class CrawlerConfiguration {
-    
+
     private Set<String> visitedURLs;
     private int expectedNumberOfPages;
     private int maxDepth;
     private int maxURLFecthedPerPage;
     private String prefix;
     private String suffix;
-    
+
     private int currentNumberOfPages;
-    
+
     public CrawlerConfiguration() {
-	this.currentNumberOfPages = 0;
+        this.currentNumberOfPages = 0;
     }
 
     public int getCurrentNumberOfPages() {
@@ -27,7 +27,7 @@ public final class CrawlerConfiguration {
     public int getExpectedNumberOfPages() {
         return expectedNumberOfPages;
     }
-    
+
     /**
      * @return the maxDepth
      */
@@ -94,7 +94,7 @@ public final class CrawlerConfiguration {
     public void setPrefix(String prefix) {
         this.prefix = prefix;
     }
-    
+
     /**
      * @param suffix the suffix to set
      */

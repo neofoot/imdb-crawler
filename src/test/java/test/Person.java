@@ -1,14 +1,14 @@
 package test;
 
 public final class Person {
-    
+
     private int age;
 
     public Person() {
     }
 
     public Person(int age) {
-	this.age = age;
+        this.age = age;
     }
 
     public int getAge() {
@@ -21,11 +21,11 @@ public final class Person {
 
     @Override
     public boolean equals(Object obj) {
-	if (obj == null || !Person.class.isInstance(obj)) {
-	    return false;
-	}
-	Person another = (Person) obj;
-	return another.getAge() == this.getAge();
+        if (obj == null || !Person.class.isInstance(obj)) {
+            return false;
+        }
+        Person another = (Person) obj;
+        return another.getAge() == this.getAge();
     }
 
     /*@Override

@@ -15,9 +15,9 @@ public final class ImdbRole {
 
     public ImdbRole() {
     }
-    
+
     public ImdbRole(String name) {
-	this.name = name;
+        this.name = name;
     }
 
     /**
@@ -36,8 +36,8 @@ public final class ImdbRole {
 
     @Override
     public String toString() {
-	StringBuilder builder = new StringBuilder("Role(");
-	builder.append("name = ").append(this.getName()).append(")");
-	return builder.toString();
+        StringBuilder builder = new StringBuilder("Role(");
+        builder.append("name = ").append(this.getName()).append(")");
+        return builder.toString();
     }
 }

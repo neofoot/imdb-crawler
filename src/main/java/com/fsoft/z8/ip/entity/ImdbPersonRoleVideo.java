@@ -1,10 +1,6 @@
 package com.fsoft.z8.ip.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.IdClass;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "person_role_video")
@@ -14,22 +10,22 @@ public final class ImdbPersonRoleVideo {
     @Id
     @Column(name = "person_id")
     private int personId;
-    
+
     @Id
     @Column(name = "role_name")
     private String roleName;
-    
+
     @Id
     @Column(name = "video_id")
     private int videoId;
-    
+
     public ImdbPersonRoleVideo() {
     }
 
     public ImdbPersonRoleVideo(int personId, String roleName, int videoId) {
-	this.personId = personId;
-	this.roleName = roleName;
-	this.videoId = videoId;
+        this.personId = personId;
+        this.roleName = roleName;
+        this.videoId = videoId;
     }
 
     /**

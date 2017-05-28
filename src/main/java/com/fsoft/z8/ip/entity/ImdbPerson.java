@@ -1,11 +1,10 @@
 package com.fsoft.z8.ip.entity;
 
-import java.util.Date;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.Date;
 
 @Entity
 @Table(name = "person")
@@ -16,22 +15,22 @@ public final class ImdbPerson {
 
     @Column(name = "dob")
     private Date dob;
-    
+
     @Column(name = "birth_place")
     private String birthPlace;
-    
+
     @Id
     @Column(name = "page_id")
     private int pageId;
 
     public ImdbPerson() {
     }
-    
+
     public ImdbPerson(String name, Date dob, String birthPlace, int pageId) {
-	this.name = name;
-	this.dob = dob;
-	this.birthPlace = birthPlace;
-	this.pageId = pageId;
+        this.name = name;
+        this.dob = dob;
+        this.birthPlace = birthPlace;
+        this.pageId = pageId;
     }
 
     /**
@@ -92,10 +91,10 @@ public final class ImdbPerson {
 
     @Override
     public String toString() {
-	StringBuilder sb = new StringBuilder("Person(");
-	sb.append("name = ").append(this.getName()).append("; ");
-	sb.append("dob = ").append(this.getDob()).append(")");
-	return sb.toString();
+        StringBuilder sb = new StringBuilder("Person(");
+        sb.append("name = ").append(this.getName()).append("; ");
+        sb.append("dob = ").append(this.getDob()).append(")");
+        return sb.toString();
     }
-    
+
 }

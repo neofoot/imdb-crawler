@@ -8,20 +8,20 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "content_rating")
 public final class ImdbContentRating {
-    
+
     @Id
     @Column(name = "code")
     private String code;
-    
+
     @Column(name = "name", nullable = false)
     private String name;
-    
+
     public ImdbContentRating() {
     }
 
     public ImdbContentRating(String code, String name) {
-	this.code = code;
-	this.name = name;
+        this.code = code;
+        this.name = name;
     }
 
     /**
@@ -54,11 +54,11 @@ public final class ImdbContentRating {
 
     @Override
     public String toString() {
-	StringBuilder sb = new StringBuilder("ContentRating(");
-	sb.append("code = ").append(this.getCode()).append("; ");
-	sb.append("name = ").append(this.getName()).append(")");
-	return sb.toString();
+        StringBuilder sb = new StringBuilder("ContentRating(");
+        sb.append("code = ").append(this.getCode()).append("; ");
+        sb.append("name = ").append(this.getName()).append(")");
+        return sb.toString();
     }
-    
-    
+
+
 }

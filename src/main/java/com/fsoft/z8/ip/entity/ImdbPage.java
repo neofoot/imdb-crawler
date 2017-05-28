@@ -12,24 +12,24 @@ public final class ImdbPage {
     @Id
     @Column(name = "id")
     private int id;
-    
+
     @Column(name = "title")
     private String title;
-    
+
     @Column(name = "description")
     private String description;
-    
+
     @Column(name = "image")
     private String image;
-    
+
     public ImdbPage() {
     }
-    
+
     public ImdbPage(int id, String title, String description, String image) {
-	this.id = id;
-	this.title = title;
-	this.description = description;
-	this.image = image;
+        this.id = id;
+        this.title = title;
+        this.description = description;
+        this.image = image;
     }
 
     /**
@@ -90,11 +90,11 @@ public final class ImdbPage {
 
     @Override
     public String toString() {
-	StringBuilder sb = new StringBuilder("Page(");
-	sb.append("id = ").append(this.getId()).append("; ");
-	sb.append("title = ").append(this.getTitle()).append(")");
-	return sb.toString();
+        StringBuilder sb = new StringBuilder("Page(");
+        sb.append("id = ").append(this.getId()).append("; ");
+        sb.append("title = ").append(this.getTitle()).append(")");
+        return sb.toString();
     }
-    
-    
+
+
 }
